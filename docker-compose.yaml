@@ -5,12 +5,8 @@ services:
     command: npm run server
     volumes:
       - .:/usr/app/
-      - /usr/app/node_modules
     ports:
-      - "8000:8000"
-    volumes:
-      - .:/usr/src/app
-      - /usr/app/node_modules
+      - '8000:8000'
   swagger:
     image: swaggerapi/swagger-ui
     ports:
